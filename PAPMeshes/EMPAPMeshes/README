@@ -1,0 +1,12 @@
+This folder contains the perisynaptic astrocytic process meshes extracted from electron microscopy used in Fig4-5 of the below study:
+
+Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2022). The endoplasmic reticulum in perisynaptic astrocytic processes: shape, distribution and effect on calcium activity. DOI: 10.1101/2022.02.28.482292
+
+The file 'data_EM_PAPs.csv' contains the main geometrical features of the ER in each PAP mesh: surface area (s_er, μm2), volume (v_cyt, μm3), er surface/cytosol volume ratio (svr_er, μm-1) and the number of ER vertexes at ER-PM contact sites (ERPM_contpt_ER).
+
+Folders contain .stl, .msh and .blender files of each mesh, as well as a screenshot of the mesh visualized with its neighboring post-synaptic density (red), in .png format.
+
+Contact:
+audrey.denizot3@oist.jp
+
+

@@ -1,0 +1,11 @@
+This folder contains the perisynaptic astrocytic process (PAP) meshes used in the study below:
+Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2022). The endoplasmic reticulum in perisynaptic astrocytic processes: shape, distribution and effect on calcium activity. DOI: 10.1101/2022.02.28.482292
+
+Meshes are divided into 2 main categories:
+- PAP meshes extracted from electron microscopy, provided in the 'EMPAPMeshes' folder, presented in Fig4-5 of the paper.
+- realistic PAP meshes created based on PAP meshes from electron microscopy, in the 'RealisticPAPMeshes folder, presented in Fig6 and Fig9 of the paper.
+
+Contact:
+audrey.denizot3@oist.jp
+
+

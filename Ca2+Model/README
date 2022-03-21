@@ -1,0 +1,57 @@
+This folder contains the code to perform reaction-diffusion simulations of calcium signaling in the perisynaptic astrocytic process meshes created in the paper below:
+
+Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2022). The endoplasmic reticulum in perisynaptic astrocytic processes: shape, distribution and effect on calcium activity. DOI: 10.1101/2022.02.28.482292
+
+The model of calcium signaling is derived from the model of Denizot et al., PLOS Computational Biology, 2019 (DOI:10.1371/journal.pcbi.1006795, code available at: https://senselab.med.yale.edu/modeldb/ShowModel?model=247694#tabs-1)
+
+This model requires STEPS software, which is freely available at http://steps.sourceforge.net/STEPS/default.php.
+
+---------------------
+ HOW TO RUN THE CODE 
+---------------------
+First, you need to download STEPS at http://steps.sourceforge.net/STEPS/default.php or directly at https://github.com/CNS-OIST/STEPS
+Dependencies for STEPS are described on the README file at https://github.com/CNS-OIST/STEPS. 
+
+The model requires that the following packages are installed:
+- numpy
+- networkx
+- sys
+
+----------------
+ PYTHON SCRIPTS
+----------------
+************
+ camodel.py 
+************
+This file contains 2 functions:
+- getModel(), that defines all molecular species, reactions, and parameters of the model
+- gen_geom(), that imports a perisynaptic astrocytic process 3D tetrahedral mesh in .msh format and distinguishes triangles that belong to the ER vs the plasma membrane.
+
+**************
+ 3d_freeca.py 
+**************
+This script sets initial conditions and runs the simulation while recording data (see output for details). Neuronal stimulation occurs at t=1000 ms.
+The script takes 5 arguments: 1. Seed value, 2. Mesh name, 3. Number of clusters (which must be a divider of the number of IP3R channels in the mesh), 4. Number of IP3 infused at stimulation time, 5. Whether Ca2+ channels at the PM are co-clustered with IP3R channels
+-----------
+ MESH FILE
+-----------
+"d9s4a34b1.msh"
+
+-----------------
+ EXAMPLE COMMAND
+-----------------
+python 3d_freeca.py 1 'd9s4a34b1.msh' 5 50 0
+
+--------
+ OUTPUT
+--------
+Two data files are generated during the simulation:
+'freeca_d9s4a34b1_cl5_ip50_cocl0.1' (example, for a simulation with 5 IP3R clusters, 50 IP3 infused, no co-clustering, and seed=1), which contains 3 columns containing 1. the number of Ca2+ ions in the cytosol, 2. the number of IP3Rs in the open state on the membrane of the ER, and 3. the number of IP3 molecules in the cytosol. Each line corresponds to a time step (1 ms).
+
+'nbopip3rpercl_d9s4a34b1_cl5_ip50_cocl0.1' (example, for a simulation with 5 IP3R clusters, 50 IP3 infused, no co-clustering, and seed=1), which contains the number of open IP3Rs at each time step (lines) and at each cluster site (columns)
+
+
+Contact:
+audrey.denizot3@oist.jp
+
+
