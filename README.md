@@ -1,4 +1,4 @@
-# PAP_ER
+# PAP-ER
 This is the repository that contains the datasets and code associated with the paper below:
 
 Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2022). The endoplasmic reticulum in perisynaptic astrocytic processes: shape, distribution and effect on calcium activity. DOI: 10.1101/2022.02.28.482292
