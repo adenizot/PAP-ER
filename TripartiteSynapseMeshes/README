@@ -1,0 +1,15 @@
+This folder contains the 28 fully reconstructed tripartite synapse meshes created in the below study:
+Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2022). The endoplasmic reticulum in perisynaptic astrocytic processes: shape, distribution and effect on calcium activity. DOI: 10.1101/2022.02.28.482292
+
+The file 'data_synapses.csv' contains the main geometrical features of each mesh: surface area (surf, μm2), volume (vol, μm3) and surface-volume ratio (svr, μm-1) of the spine, the bouton and the perisynaptic process (PAP) of each mesh. 
+'minPMPSD' corresponds to the minimum distance between vertexes on the plasma membrane of the PAP and the center of mass of the PSD. 
+'er_pres' is 'ER' if the PAP contains some ER, 'noER' otherwise. 
+In meshes where ER was present, the following analysis was performed:
+ER surface area (er_surf, μm2), volume (er_vol, μm3), ER surface-volume ratio (er_svr, μm-1), ER surface/PAP volume ratio (erpap_svr, μm-1), minimum distance between the ER and the center of mass of the post-synaptic density (min_erpsd, μm), PM (erpmc_pmsurf, μm2) and ER (erpmc_ersurf, μm2) surface area at ER-PM contact sites (distance <= 20 nm), minimum ER-PM distance (min_erpm_dist, μm) and mean ER-PM distance (mean_erpmd, μm).
+
+The folder 'meshes' contains Blender files of each of the 28 meshes, with the spine (blue), the bouton (grey), the post-synaptic density (red), the perisyaptic astrocytic process (green) and the astrocytic ER (if present, yellow).
+
+Contact:
+audrey.denizot3@oist.jp
+
+
