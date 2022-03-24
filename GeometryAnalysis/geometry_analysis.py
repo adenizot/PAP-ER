@@ -17,7 +17,7 @@ WORK_COLLECTION = 'Collection 1' # Name of the collection that contains the obje
 PAP_OBJECT_NAME = 'PAP'          # Name of the PAP object 
 ER_OBJECT_NAME = 'ER'            # Name of the ER object 
 PSD_OBJECT_NAME = 'd1s15a32b1_E' # Name of the PSD object 
-ERPM_dist = 0.02                 # Threshold distance defining ER-PM contact site
+ERPM_dist = 0.02                 # Threshold distance defining ER-PM contact site (in micrometers)
 
 
 #######################
