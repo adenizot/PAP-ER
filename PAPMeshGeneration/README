@@ -8,11 +8,17 @@ The folder 'Example_Fig8' contains the PAP meshes generated using 'GenerateMesh.
 
 IMPORTANT NOTICE
 ------------------
+<<<<<<< HEAD
 1. To run this code on meshes extracted from EM, best is to import the .stl PAP and ER meshes in a new blender file, open the 'GenerateMesh.py' script, update parameter values accordingly and run the script.
 
 2. Meshes must be manifold.
 
 3. Optimal parameter values differ depending on the mesh so that the user has to test different parameter values until the desired ER splitting and scattering are obtained. If you are unsatisfied with the results from a physics simulation/change parameter values line 15-35 of the script file and redo step 1. 
+=======
+1. To run this code on meshes extracted from EM, best is to export the PM and ER meshes in .stl format, import them in a new blender file, open the 'GenerateMesh.py' script and run the code.
+
+2. Optimal parameter values differ depending on the mesh so that the user has to test different parameter values until the desired ER splitting and scattering are obtained. If you are unsatisfied with the results from a physics simulation/change parameter values line 15-35 of the script file and redo step 1. 
+>>>>>>> 96f3a83659e5f0413a85ca316efef3808a510f3e
 
 Contact:
 audrey.denizot3@oist.jp
