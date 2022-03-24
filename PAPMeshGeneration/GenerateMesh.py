@@ -475,7 +475,7 @@ def SaveSTLandMeasureERPMForFrame(frame = 1):
     
     # Measures the distance between each PM vertex and the closest ER vertex
     d = GetMinDistances(stlPM, stlER)
-    WriteTXTOutput([str(x) for x in d],TEXT_FILENAME+str(bpy.context.scene.frame_current).zfill(3)+'.txt')
+    WriteTXTOutput([str(x) for x in d],ERPM_TEXT_FILENAME+str(bpy.context.scene.frame_current).zfill(3)+'.txt')
 
 
 '''
