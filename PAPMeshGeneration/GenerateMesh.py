@@ -290,7 +290,7 @@ def ExportSTL(Coll, oPM, oER):
     copyPM.select_set(state=True)
     bpy.context.view_layer.objects.active = copyPM
     bpy.ops.object.join()
-    bpy.ops.export_mesh.stl(filepath='stl.frame.'+str(bpy.context.scene.frame_current).zfill(3)+'.stl', use_selection=True) #export mesh
+    bpy.ops.export_mesh.stl(filepath=STL_FILENAME+str(bpy.context.scene.frame_current).zfill(3)+'.stl', use_selection=True) #export mesh
     bpy.ops.object.delete()
     
 
