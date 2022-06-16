@@ -30,7 +30,7 @@ VOL_TOL = 0.00003               # Volume tolerance/threshold below which the obj
 DEBUG_SPLIT = False             #If true, we don't run physics and stop only after ER splitted. 
 
 # ER SCATTERING PARAMETERS
-N_FRAMES = 100                  # How many frames physics simulation will be running. Each frame can then be exported as an .stl file (see line )
+N_FRAMES = 250                  # How many frames physics simulation will be running. Each frame can then be exported as an .stl file (see line )
 PHYS_COLLECTION = 'Physics'     # This collection will be created for physics simulation
 PHYS_CONSTRAINTS = 'constraints'# Collection that will be created and used by physics and to store a 'Force' object
 
@@ -84,7 +84,7 @@ def WriteTXTOutput(listdata,filename):
     with open(filename, 'w') as f:
         sdata = '\n'.join(listdata)
         f.writelines(sdata)
-                     
+    f.close()                 
 
 # For visualization purposes (used to visualize ER-PM contact sites) - creates a mesh made of vertices
 def CreatePointCloudObject(points):
@@ -462,7 +462,7 @@ def RunScatter():
 
 
 # Analyses ER-PM contact sites of the selected frame and exports the PAP mesh in stl format. Can be run on all frames of the physics simulation if desired. 
-def SaveSTLandMeasureERPMForFrame(frame = 1):
+def SaveSTLandMeasureERPMForFrame(frame):
     oPM = bpy.data.objects['copy.' + PAP_OBJECT_NAME]
     phyColl = bpy.data.collections[PHYS_COLLECTION]
     # Prepare ER and PAP objects for mesh export
@@ -494,9 +494,9 @@ RunScatter()
 
 if DEBUG_SPLIT == False:
     # Measure ER-PM contact sites and save frames as STL meshes for simulations
-    #for n in range(0, N_FRAMES):
-    #    SaveSTLandMeasureERPMForFrame(frame = n)
+    #for n in range(0, N_FRAMES+1):
+    #    SaveSTLandMeasureERPMForFrame(n)
 
     #OR, Compute for specific frame:
-    SaveSTLandMeasureERPMForFrame(frame = 10)
+    SaveSTLandMeasureERPMForFrame(10)
 
