@@ -22,9 +22,6 @@ ERPM_TEXT_FILENAME = 'ERPMd_' + str(SYNAPSE_NAME) + '_fr' # Name of the file in 
 STL_FILENAME = str(SYNAPSE_NAME) + '_fr'                   # Name of the stl file exported
 
 # ER SPLITTING PARAMETERS
-COLL_MARGIN_PM = 0.005          # Affects how close ER objects can get to the PAP plasma membrane. Larger values may prevent intersections 
-                 		 # However, if the value is too large, it may send the collided ER objects far out of the cell 
-COLL_MARGIN_ER = 0.001          # Affects how close ER objects can get. Larger values may prevent intersections
 SPLIT_CUBE_SIZE = 0.1           # Size of the cubes used to split the original ER object into smaller ER objects 
 VOL_TOL = 0.00003               # Volume tolerance/threshold below which the object is deleted because it is too small
 DEBUG_SPLIT = False             #If true, we don't run physics and stop only after ER splitted. 
@@ -33,6 +30,9 @@ DEBUG_SPLIT = False             #If true, we don't run physics and stop only aft
 N_FRAMES = 250                  # How many frames physics simulation will be running. Each frame can then be exported as an .stl file (see line )
 PHYS_COLLECTION = 'Physics'     # This collection will be created for physics simulation
 PHYS_CONSTRAINTS = 'constraints'# Collection that will be created and used by physics and to store a 'Force' object
+COLL_MARGIN_PM = 0.005          # Affects how close ER objects can get to the PAP plasma membrane. Larger values may prevent intersections 
+                 		            # However, if the value is too large, it may send the collided ER objects far out of the cell 
+COLL_MARGIN_ER = 0.001          # Affects how close ER objects can get. Larger values may prevent intersections
 
 # Note: remember to hide from the viewport other objects than the new ER and PAP objects in order to visualize the movement of the ER objects between each frame of the physics simulation
 
