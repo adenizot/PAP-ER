@@ -1,5 +1,6 @@
 This folder contains the code that was used to generate realistic PAP meshes with various ER distributions and constant ER shape in a perisynaptic astrocytic process mesh in the below study:
-Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2022). The endoplasmic reticulum in perisynaptic astrocytic processes: shape, distribution and effect on calcium activity. DOI: 10.1101/2022.02.28.482292
+
+Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2025). The ultrastructural properties of the endoplasmic reticulum govern microdomain signaling in perisynaptic astrocytic processes. DOI: 10.1101/2022.02.28.482292
 
 The file 'GenerateMesh.py' contains the code that can be opened in Blender to generate realistic PAP meshes with various ER distributions.
 You can run the script in the blender file 'd1s15a32b1.blend'. The same script can be run on other PAP meshes from this study, provided that you change the parameter values accordingly (see below).
