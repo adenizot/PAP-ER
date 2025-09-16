@@ -1,8 +1,8 @@
-This folder contains the code to perform reaction-diffusion simulations of calcium signaling in the perisynaptic astrocytic process meshes created in the paper below:
+This folder contains the code to perform reaction-diffusion simulations of calcium signaling in the perisynaptic astrocytic process meshes created in the following paper:
 
-Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2022). The endoplasmic reticulum in perisynaptic astrocytic processes: shape, distribution and effect on calcium activity. DOI: 10.1101/2022.02.28.482292
+Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2025). The ultrastructural properties of the endoplasmic reticulum govern microdomain signaling in perisynaptic astrocytic processes. DOI: 10.1101/2022.02.28.482292
 
-The model of calcium signaling is derived from the model of Denizot et al., PLOS Computational Biology, 2019 (DOI:10.1371/journal.pcbi.1006795, code available at: https://senselab.med.yale.edu/modeldb/ShowModel?model=247694#tabs-1)
+The model of calcium signaling is derived from the model of Denizot et al., PLOS Computational Biology, 2019 (DOI:10.1371/journal.pcbi.1006795, code available at: github.com/ModelDBRepository/247694)
 
 This model requires STEPS software, which is freely available at http://steps.sourceforge.net/STEPS/default.php.
 
@@ -52,6 +52,6 @@ Two data files are generated during the simulation:
 
 
 Contact:
-audrey.denizot3@oist.jp
+audrey.denizot@inria.fr
 
 
