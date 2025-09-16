@@ -1,16 +1,17 @@
 This folder contains the code used to perform geometrical analysis of the meshes created in the below study:
-Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2022). The endoplasmic reticulum in perisynaptic astrocytic processes: shape, distribution and effect on calcium activity. DOI: 10.1101/2022.02.28.482292
 
-The 'geometry_analysis.py' script was used to measure PM-PSD, ER-PSD and ER-PM distances presented in Fig2, 3, 6G-J, 7, 8B-D of the paper.
+Denizot, A.; Veloz Castillo, M. F.; Puchenkov, P.; Cali, C.; De Schutter, E. (2025). The ultrastructural properties of the endoplasmic reticulum govern microdomain signaling in perisynaptic astrocytic processes. DOI: 10.1101/2022.02.28.482292
 
-The blender file of the PAP mesh 'd1s15a32b1.blend' is provided as an example. If you run the code, it will create files with:
-- distances between each PM vertex and the center of mass of the post-synaptic density
-- distances between each ER vertex and the center of mass of the post-synaptic density
+The 'geometry_analysis.py' script was used to measure PM-PSD, ER-PSD and ER-PM distances presented in Fig. 1 and 2 of the paper.
+
+The blender file of the PAP mesh 'd1s15a32b1.blend' is provided as an example. If you run the code, it will create files containing:
+- distances between each PM vertex and the center of mass of the post-synaptic density 
+- distances between each ER vertex and the center of mass of the post-synaptic density 
 - distances between each PM vertex and the closest ER vertex 
 
 # Note: distances are expressed in micrometers
 
 Contact:
-audrey.denizot3@oist.jp
+audrey.denizot@inria.fr
 
 
