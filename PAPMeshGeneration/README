@@ -15,6 +15,6 @@ IMPORTANT NOTICE
 3. Optimal parameter values differ depending on the mesh so that the user has to test different parameter values until the desired ER splitting and scattering are obtained. If you are unsatisfied with the results from a physics simulation/change parameter values line 15-35 of the script file and redo step 1. 
 
 Contact:
-audrey.denizot3@oist.jp
+audrey.denizot@inria.fr
 
 
