@@ -15,4 +15,4 @@ Datasets will be uploaded online upon paper acceptance and will be organized as 
 - 'TripartiteSynapseMeshes' contains the tripartite synapse meshes used in this study
 
 Contact:
-audrey.denizot3@oist.jp
+audrey.denizot@inria.fr
